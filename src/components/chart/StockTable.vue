@@ -34,7 +34,7 @@ stockService.addListener((data) => table.value = data);
             </tr>
             </tbody>
         </v-table>
-        <template v-else>Loading data...</template>
+        <template v-else>Loading data... It can take a few seconds, my server is cheap :(</template>
       </v-card-text>
     </v-card>
   </v-container>
