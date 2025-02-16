@@ -6,7 +6,7 @@ export default class StockService {
 
   constructor() {
     this.client = new Client({
-      brokerURL: 'ws://' + import.meta.env.VITE_API_URL +'/stream',
+      brokerURL: import.meta.env.VITE_WS_URL,
       connectHeaders: {},
       debug: (msg) => console.log(msg),
       reconnectDelay: 5000,
